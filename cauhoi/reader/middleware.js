@@ -22,7 +22,7 @@ fs
 let parent = path.dirname(path.dirname(__dirname));
 
 global.config.modules.forEach((el) => {
-  let root = [parent, 'app', el , 'middleware'].join(path.sep);
+  let root = [parent, 'src', el , 'middleware'].join(path.sep);
 
   if (fs.existsSync(root)) {
     fs
